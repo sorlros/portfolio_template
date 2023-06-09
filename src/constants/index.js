@@ -16,11 +16,11 @@ import {
 	starbucks,
 	tesla,
 	shopify,
-	carrent,
-	jobit,
-	tripguide,
+	animate,
+	chatgpt,
 	threejs,
-} from "../assets"
+	netflixclone,
+} from "../assets";
 
 export const navLinks = [
 	{
@@ -35,7 +35,7 @@ export const navLinks = [
 		id: "contact",
 		title: "Contact",
 	},
-]
+];
 
 const services = [
 	{
@@ -43,18 +43,18 @@ const services = [
 		icon: web,
 	},
 	{
-		title: "React Native Developer",
-		icon: mobile,
+		title: "Full Stack Developer",
+		icon: nodejs,
 	},
 	{
 		title: "Nextjs Developer",
 		icon: nextjs,
 	},
 	{
-		title: "Content Creator",
-		icon: creator,
+		title: "React Developer",
+		icon: reactjs,
 	},
-]
+];
 
 const technologies = [
 	{
@@ -98,7 +98,7 @@ const technologies = [
 		name: "git",
 		icon: git,
 	},
-]
+];
 
 const experiences = [
 	{
@@ -153,72 +153,73 @@ const experiences = [
 			"Participating in code reviews and providing constructive feedback to other developers.",
 		],
 	},
-]
+];
 
 const projects = [
 	{
-		name: "Car Rent",
-		description:
-			"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+		name: "chat-with-chatgpt",
+		description: "실시간 채팅 웹사이트 및 ChatGPT적용",
 		tags: [
 			{
 				name: "react",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "mongodb",
+				name: "openai",
 				color: "green-text-gradient",
 			},
 			{
-				name: "tailwind",
+				name: "backend",
 				color: "pink-text-gradient",
 			},
+			{
+				name: "@reduxjs/toolkit",
+				color: "orange-text-gradient",
+			},
 		],
-		image: carrent,
-		source_code_link: "https://github.com/",
+		image: chatgpt,
+		source_code_link: "https://github.com/sorlros/chat-with-chatgpt",
 	},
 	{
-		name: "Job IT",
-		description:
-			"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+		name: "3D-animate-web",
+		description: "Next.js, three, gsap등을 활용한 3D웹사이트",
 		tags: [
 			{
-				name: "react",
+				name: "next.js",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "restapi",
+				name: "three",
 				color: "green-text-gradient",
 			},
 			{
-				name: "scss",
+				name: "gsap",
 				color: "pink-text-gradient",
 			},
 		],
-		image: jobit,
-		source_code_link: "https://github.com/",
+		image: animate,
+		source_code_link: "https://github.com/sorlros/animate-web",
 	},
 	{
-		name: "Trip Guide",
-		description:
-			"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+		name: "Netflix 클론 사이트",
+		description: "mongodb, prismadb를 활용한 풀스택 넷플릭스 클론 사이트입니다.",
 		tags: [
 			{
-				name: "nextjs",
+				name: "MongoDB",
 				color: "blue-text-gradient",
 			},
 			{
-				name: "supabase",
+				name: "PrismaDB",
 				color: "green-text-gradient",
 			},
 			{
-				name: "css",
+				name: "Next.js",
 				color: "pink-text-gradient",
 			},
 		],
-		image: tripguide,
-		source_code_link: "https://github.com/",
+		image: netflixclone,
+		source_code_link: "https://github.com/sorlros/netflix-clone",
 	},
-]
+];
 
-export { services, technologies, experiences, projects }
+export { services, technologies, experiences, projects };

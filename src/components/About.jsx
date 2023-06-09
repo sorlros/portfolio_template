@@ -1,11 +1,11 @@
-import React from "react"
-import Tilt from "react-tilt"
-import { motion } from "framer-motion"
+import React from "react";
+import Tilt from "react-tilt";
+import { motion } from "framer-motion";
 
-import { styles } from "../styles"
-import { services } from "../constants"
-import { SectionWrapper } from "../hoc"
-import { fadeIn, textVariant } from "../utils/motion"
+import { styles } from "../styles";
+import { services } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon }) => (
 	<Tilt className="xs:w-[250px] w-full">
@@ -27,7 +27,7 @@ const ServiceCard = ({ index, title, icon }) => (
 			</div>
 		</motion.div>
 	</Tilt>
-)
+);
 
 const About = () => {
 	return (
@@ -54,7 +54,7 @@ const About = () => {
 				))}
 			</div>
 		</>
-	)
-}
+	);
+};
 
-export default SectionWrapper(About, "about")
+export default SectionWrapper(About, "about");

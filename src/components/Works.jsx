@@ -1,13 +1,21 @@
-import { motion } from "framer-motion"
-import React from "react"
-import Tilt from "react-tilt"
-import { github } from "../assets"
-import { projects } from "../constants"
-import { SectionWrapper } from "../hoc"
-import { styles } from "../styles"
-import { fadeIn, textVariant } from "../utils/motion"
+import { motion } from "framer-motion";
+import React from "react";
+import Tilt from "react-tilt";
+import { github, vercel } from "../assets";
+import { projects } from "../constants";
+import { SectionWrapper } from "../hoc";
+import { styles } from "../styles";
+import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({
+	index,
+	name,
+	description,
+	tags,
+	image,
+	source_code_git_link,
+	source_code_vercel_link,
+}) => {
 	return (
 		<motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
 			<Tilt
@@ -26,11 +34,21 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 					/>
 
 					<div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-						<div
-							onClick={() => window.open(source_code_link, "_blank")}
-							className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
-						>
-							<img src={github} alt="github" className="w-1/2 h-1/2 object-contain" />
+						<div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+							<img
+								src={github}
+								alt="github"
+								className="w-1/2 h-1/2 object-contain"
+								onClick={() => window.open(source_code_git_link, "_blank")}
+							/>
+						</div>
+						<div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+							<img
+								src={vercel}
+								alt="vercel"
+								className="w-1/2 h-1/2 object-contain"
+								onClick={() => window.open(source_code_vercel_link, "_blank")}
+							/>
 						</div>
 					</div>
 				</div>
@@ -49,8 +67,8 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 				</div>
 			</Tilt>
 		</motion.div>
-	)
-}
+	);
+};
 
 const Works = () => {
 	return (
@@ -65,9 +83,7 @@ const Works = () => {
 					variants={fadeIn("", "", 0.1, 1)}
 					className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
 				>
-					Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium quas et
-					eligendi architecto fugit ullam, voluptatibus consequatur atque tempora esse,
-					facilis voluptate error cumque ratione, ipsum laudantium quod minima quos.
+					React와 Next.js를 기반으로 만들어진 포트폴리오입니다.
 				</motion.p>
 			</div>
 
@@ -77,7 +93,7 @@ const Works = () => {
 				))}
 			</div>
 		</>
-	)
-}
+	);
+};
 
-export default SectionWrapper(Works, "")
+export default SectionWrapper(Works, "");

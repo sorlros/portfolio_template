@@ -226,7 +226,8 @@ const projects = [
     ],
     image: netflixclone,
     source_code_git_link: "https://github.com/sorlros/netflix-clone",
-    source_code_vercel_link: "https://netflix-clone-bice-pi.vercel.app/",
+    source_code_vercel_link:
+      "https://netfliss-clone-n5jnz95ub-sorlros.vercel.app/auth",
   },
   {
     name: "Spotify 클론 사이트",

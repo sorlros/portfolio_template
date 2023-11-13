@@ -262,10 +262,6 @@ const projects = [
         color: "blue-text-gradient",
       },
       {
-        name: "Supabase",
-        color: "green-text-gradient",
-      },
-      {
         name: "Tailwindcss",
         color: "pink-text-gradient",
       },

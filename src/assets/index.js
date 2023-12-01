@@ -36,6 +36,7 @@ import spotifyclone from "./spotifyclone.png";
 import twitterclone from "./twitterclone.png";
 import airbnbclone from "./airbnbclone.png";
 import notionclone from "./notionclone.png";
+import trelloclone from "./trelloclone.png";
 
 export {
   logo,
@@ -73,4 +74,5 @@ export {
   twitterclone,
   airbnbclone,
   notionclone,
+  trelloclone,
 };

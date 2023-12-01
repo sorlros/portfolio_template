@@ -25,6 +25,7 @@ import {
   twitterclone,
   airbnbclone,
   notionclone,
+  trelloclone,
 } from "../assets";
 
 export const navLinks = [
@@ -299,6 +300,32 @@ const projects = [
     image: notionclone,
     source_code_git_link: "https://github.com/sorlros/notion-clone",
     source_code_vercel_link: "https://sotion-clone.vercel.app/",
+  },
+  {
+    name: "Trello 클론 사이트",
+    description:
+      "Next.js와 Typescript로 만든 웹기반 프로젝트 관리 소프트웨어입니다. zustand와 zod를 사용해서 스키마 선언 및 유효성검사를 했으며 zustand, clerk로 로그인 및 유저정보를 다루고 stripe로 유료 기능을 사용할수있습니다.",
+    tags: [
+      {
+        name: "Typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Prisma",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwindcss",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "stripe",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: trelloclone,
+    source_code_git_link: "https://github.com/sorlros/trello-clone",
+    source_code_vercel_link: "https://trello-clone-lac-pi.vercel.app/",
   },
 ];
 

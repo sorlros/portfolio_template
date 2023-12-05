@@ -38,7 +38,7 @@ import airbnbclone from "./airbnbclone.png";
 import notionclone from "./notionclone.png";
 import trelloclone from "./trelloclone.png";
 
-import neflixLogo from "./logo/netflix_logo.png";
+import netflixLogo from "./logo/netflix_logo.png";
 import notionLogo from "./logo/notion_logo.png";
 import spotifyLogo from "./logo/spotify_logo.png";
 import trelloLogo from "./logo/trello_logo.png";
@@ -82,7 +82,7 @@ export {
   airbnbclone,
   notionclone,
   trelloclone,
-  neflixLogo,
+  netflixLogo,
   notionLogo,
   spotifyLogo,
   trelloLogo,

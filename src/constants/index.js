@@ -1,7 +1,6 @@
 import {
   mobile,
   nextjs,
-  creator,
   web,
   javascript,
   typescript,

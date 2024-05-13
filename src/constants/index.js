@@ -17,7 +17,7 @@ import {
   twitterclone,
   allYouHaveTodo,
   savvyWallet,
-  spotifyLogo,
+  savvyWalletLogo,
   twitterLogo,
   todoLogo
 } from "../assets";
@@ -118,7 +118,7 @@ const experiences = [
   {
     title: "SavvyWallet",
     company_name: "sorlros",
-    icon: spotifyLogo,
+    icon: savvyWalletLogo,
     iconBg: "#383E56",
     points: [
       "사용자의 월 별 지출 내역 및 카테고리별 지출을 시각적으로 표현하기 위해 차트를 chart.js와 react-calendar 라이브러리를 사용했으며 메모를 남길수 있는 기능을 포함했습니다. 해당 데이터들은 각 사용자별로 mongoDB와 prisma를 통해 저장되며 실시간으로 데이터들을 저장 및 불러올수있습니다.",

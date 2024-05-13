@@ -47,6 +47,7 @@ import trelloLogo from "./logo/trello_logo.png";
 import twitterLogo from "./logo/twitter_logo.png";
 import airbnbLogo from "./logo/airbnbLogo.png";
 import todoLogo from "./logo/todo.png"
+import savvyWalletLogo from "./logo/savvyWalletLogo.png"
 
 
 export {
@@ -94,5 +95,6 @@ export {
   airbnbLogo,
   savvyWallet,
   allYouHaveTodo,
-  todoLogo
+  todoLogo,
+  savvyWalletLogo
 };

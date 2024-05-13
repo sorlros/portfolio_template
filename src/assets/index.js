@@ -37,6 +37,8 @@ import twitterclone from "./twitterclone.png";
 import airbnbclone from "./airbnbclone.png";
 import notionclone from "./notionclone.png";
 import trelloclone from "./trelloclone.png";
+import savvyWallet from "./savvy-wallet.png";
+import allYouHaveTodo from "./all-you-have-to-do.png"
 
 import netflixLogo from "./logo/netflix_logo.png";
 import notionLogo from "./logo/notion_logo.png";
@@ -44,6 +46,8 @@ import spotifyLogo from "./logo/spotify_logo.png";
 import trelloLogo from "./logo/trello_logo.png";
 import twitterLogo from "./logo/twitter_logo.png";
 import airbnbLogo from "./logo/airbnbLogo.png";
+import todoLogo from "./logo/todo.png"
+
 
 export {
   logo,
@@ -88,4 +92,7 @@ export {
   trelloLogo,
   twitterLogo,
   airbnbLogo,
+  savvyWallet,
+  allYouHaveTodo,
+  todoLogo
 };

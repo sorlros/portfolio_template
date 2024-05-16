@@ -141,11 +141,11 @@ const projects = [
     description: "Next.js, Firebase, prismadb를 사용한 Todo 알림 서비스 웹사이트입니다. 익명 로그인시 현재 Todo관련 기능들이 구현되어있지 않습니다.(구글 로그인시에만 기능사용 가능)",
     tags: [
       {
-        name: "MongoDB",
+        name: "mongoDB",
         color: "blue-text-gradient",
       },
       {
-        name: "PrismaDB",
+        name: "Prisma",
         color: "green-text-gradient",
       },
       {
@@ -185,11 +185,11 @@ const projects = [
     description: "Next.js, mongodb, prismadb, zustand를 사용한 가계부 웹사이트입니다.",
     tags: [
       {
-        name: "MongoDB",
+        name: "mongoDB",
         color: "blue-text-gradient",
       },
       {
-        name: "PrismaDB",
+        name: "Prisma",
         color: "green-text-gradient",
       },
       {

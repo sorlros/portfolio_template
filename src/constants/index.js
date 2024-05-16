@@ -137,6 +137,28 @@ const experiences = [
 
 const projects = [
   {
+    name: "All-You-Have-To-do",
+    description: "Next.js, Firebase, prismadb를 사용한 Todo 알림 서비스 웹사이트입니다. 익명 로그인시 현재 Todo관련 기능들이 구현되어있지 않습니다.(구글 로그인시에만 기능사용 가능)",
+    tags: [
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "PrismaDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: allYouHaveTodo,
+    source_code_git_link: "https://github.com/sorlros/all-you-have-to-do-version2",
+    source_code_vercel_link:
+      "https://all-you-have-to-do-version2.vercel.app/",
+  },
+  {
     name: "Twitter-clone-site",
     description: "swr, typescript, tailwindcss, zustand 활용",
     tags: [
@@ -179,28 +201,6 @@ const projects = [
     source_code_git_link: "https://github.com/sorlros/savvy-wallet",
     source_code_vercel_link:
       "https://savvy-wallet-mm8n.vercel.app/",
-  },
-  {
-    name: "All-You-Have-To-do",
-    description: "Next.js, Firebase, prismadb를 사용한 Todo 알림 서비스 웹사이트입니다. 익명 로그인시 현재 Todo관련 기능들이 구현되어있지 않습니다.(구글 로그인시에만 기능사용 가능)",
-    tags: [
-      {
-        name: "MongoDB",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "PrismaDB",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next.js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: allYouHaveTodo,
-    source_code_git_link: "https://github.com/sorlros/all-you-have-to-do-version2",
-    source_code_vercel_link:
-      "https://all-you-have-to-do-version2.vercel.app/",
   },
 ];
 

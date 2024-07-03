@@ -39,6 +39,7 @@ import notionclone from "./notionclone.png";
 import trelloclone from "./trelloclone.png";
 import savvyWallet from "./savvy-wallet.png";
 import allYouHaveTodo from "./all-you-have-to-do.png"
+import lolInfo from "./lolInfo.png"
 
 import netflixLogo from "./logo/netflix_logo.png";
 import notionLogo from "./logo/notion_logo.png";
@@ -96,5 +97,6 @@ export {
   savvyWallet,
   allYouHaveTodo,
   todoLogo,
-  savvyWalletLogo
+  savvyWalletLogo,
+  lolInfo
 };

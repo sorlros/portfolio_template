@@ -19,7 +19,8 @@ import {
   savvyWallet,
   savvyWalletLogo,
   twitterLogo,
-  todoLogo
+  todoLogo,
+  lolInfo
 } from "../assets";
 
 export const navLinks = [
@@ -133,6 +134,15 @@ const experiences = [
       "이 웹사이트를 만들게 된 동기는 사용자에게 알림을 보낼수있는 웹사이트를 제작해보고싶어 정보를 찾던 중 Firebase를 통해 해당 기능을 구현할수있음을 찾게되고 해당 기능을 사용해보았습니다. token값을 통해 사용자의 기기정보를 등록하고 해당 기기로 알림을 보내는 과정들을 알게되었고 예약 알림 기능 구현을 위해 node-schedule 라이브러리를 통해 사용자가 지정한 시간에 알림이 전송되게끔 코드를 작성했습니다. 이 프로젝트를 통해 서비스워커에 대한 이해도와 Next.js의 Api routes 기능을 경험했습니다. 주로 겪은 오류들은 Todo 데이터들을 생성하는 과정에서 컴포넌트 생명주기와 관련된 렌더링 과정에서 오류를 겪어 해당 문제에 대해 인지하고 수정하는 과정들이 있었으며 Firebase의 기능을 처음 사용하다보니 적지 않은 문제들에 마주하게됬었습니다. Web Push Notification 기능에 대해 많은 자료를 접하고 직접 구현해볼수있어 개인적으로는 그동안의 프로젝트중 가장 기억에 남았습니다."
     ],
   },
+  {
+    title: "lol-info",
+    company_name: "sorlros",
+    icon: lolInfo,
+    iconBg: "#383E56",
+    points: [
+      "lol-info 웹사이트는 리그오브레전드 유저들의 이전 게임 정보들을 나타내는 op.gg와 같은 사이트들의 기능을 만들고 open api를 통해 얻은 데이터들을 용도에 맞게 코드로 분류하고 사용해보기 위해 만들어진 웹사이트입니다. 해당 웹사이트에는 타입스크립트, 리액트 리덕스가 사용되었으며 UI를 위해 tailwindcss와 shadcn-ui가 사용되었습니다. 유저의 인게임 닉네임과 태그넘버를 통해 특정 유저의 이전 플레이했던 게임들의 정보를 불러올수있으며 개인 환경에서의 제한된 성능으로 인해 최근 20게임동안 사용한 챔피언 목록만 나타나게끔 만들어졌습니다. 추후 LCK 일정을 메인페이지에 추가 할 예정입니다. 현재 해당 기능 구현을 위한 api를 얻기위해 신청한 상태입니다."
+    ],
+  },
 ];
 
 const projects = [
@@ -201,6 +211,28 @@ const projects = [
     source_code_git_link: "https://github.com/sorlros/savvy-wallet",
     source_code_vercel_link:
       "https://savvy-wallet-mm8n.vercel.app/",
+  },
+  {
+    name: "lol-info",
+    description: "리그오브레전드 유저의 정보를 게임 정보를 데이터화한 사이트입니다.",
+    tags: [
+      {
+        name: "react-redux",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: lolInfo,
+    source_code_git_link: "https://github.com/sorlros/lol-info",
+    source_code_vercel_link:
+      "https://lol-info-teal.vercel.app/",
   },
 ];
 

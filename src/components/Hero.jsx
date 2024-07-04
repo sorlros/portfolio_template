@@ -19,8 +19,7 @@ const Hero = () => {
 						안녕하세요, 저는 <span className="text-[#915eff]">최규철</span> 입니다.
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-						I develop user <br className="sm:block hidden" /> interfaces and
-						web appilcations.
+						UI/UX 디자인, 반응형 웹 개발, 성능 최적화 <br className="sm:block hidden" /> 프론트에드 웹개발자 최규철입니다.
 					</p>
 				</div>
 

@@ -148,7 +148,7 @@ const experiences = [
 const projects = [
   {
     name: "All-You-Have-To-do",
-    description: "Next.js, Firebase, prismadb를 사용한 Todo 알림 서비스 웹사이트입니다. 익명 로그인시 현재 Todo관련 기능들이 구현되어있지 않습니다.(구글 로그인시에만 기능사용 가능)",
+    description: "firebase를 활용한 실시간 알림 기능 웹사이트입니다. 간단한 메모와 함께 알림을 설정 할수있습니다.",
     tags: [
       {
         name: "mongoDB",
@@ -170,7 +170,7 @@ const projects = [
   },
   {
     name: "Twitter-clone-site",
-    description: "swr, typescript, tailwindcss, zustand 활용",
+    description: "실시간 소식 공유, 팔로워 및 팔로잉 기능 구현",
     tags: [
       {
         name: "swr",
@@ -192,7 +192,7 @@ const projects = [
   
   {
     name: "SavvyWallet",
-    description: "Next.js, mongodb, prismadb, zustand를 사용한 가계부 웹사이트입니다.",
+    description: "가계부 웹사이트 SavvyWallet은 개인의 지출을 일일 별 월별 등으로 나누어 그래프와 선으로 시각화해서 유저에게 제공합니다.",
     tags: [
       {
         name: "mongoDB",

@@ -20,7 +20,8 @@ import {
   savvyWalletLogo,
   twitterLogo,
   todoLogo,
-  lolInfo
+  lolInfo,
+  typingMagician
 } from "../assets";
 
 export const navLinks = [
@@ -126,7 +127,7 @@ const experiences = [
     ],
   },
   {
-    title: "All-You-Have-To-Do",
+    title: "All-You-Have-To-Do",
     company_name: "sorlros",
     icon: todoLogo,
     iconBg: "#383E56",
@@ -140,7 +141,16 @@ const experiences = [
     icon: lolInfo,
     iconBg: "#383E56",
     points: [
-      "lol-info 웹사이트는 리그오브레전드 유저들의 이전 게임 정보들을 나타내는 op.gg와 같은 사이트들의 기능을 만들고 open api를 통해 얻은 데이터들을 용도에 맞게 코드로 분류하고 사용해보기 위해 만들어진 웹사이트입니다. 해당 웹사이트에는 타입스크립트, 리액트 리덕스가 사용되었으며 UI를 위해 tailwindcss와 shadcn-ui가 사용되었습니다. 유저의 인게임 닉네임과 태그넘버를 통해 특정 유저의 이전 플레이했던 게임들의 정보를 불러올수있으며 개인 환경에서의 제한된 성능으로 인해 최근 20게임동안 사용한 챔피언 목록만 나타나게끔 만들어졌습니다. 추후 LCK 일정을 메인페이지에 추가 할 예정입니다. 현재 해당 기능 구현을 위한 api를 얻기위해 신청한 상태입니다."
+      "lol-info 웹사이트는 리그오브레전드 유저들의 이전 게임 정보들을 나타내는 op.gg와 같은 사이트들의 기능을 만들고 open api를 통해 얻은 데이터들을 용도에 맞게 코드로 분류하고 사용해보기 위해 만들어진 웹사이트입니다. 해당 사이트를 만들게 된 계기는 restful api을 활용한 웹사이트를 만들어보고싶었고 고민 하던 중 적절한 데이터들이 이미 충분한 lol을 활용했습니다. 해당 웹사이트에는 타입스크립트, 리액트 리덕스가 사용되었으며 UI를 위해 tailwindcss와 shadcn-ui가 사용되었습니다. 유저의 인게임 닉네임과 태그넘버를 통해 특정 유저의 이전 플레이했던 게임들의 정보를 불러올수있으며 개인 환경에서의 제한된 성능으로 인해 최근 20게임동안 사용한 챔피언 목록만 나타나게끔 만들어졌습니다."
+    ],
+  },
+  {
+    title: "typing-magician",
+    company_name: "sorlros",
+    icon: typingMagician,
+    iconBg: "#383E56",
+    points: [
+      "타이핑과 게임을 결합한 웹사이트를 개발하면서  조건에 따라 상태값을 관리하는 기능 구현에 특히 중점을 두었습니다. 기존의 일반적인 웹사이트와는 달리 유저가 실시간으로 경험하는 요소들을 다양한 관점에서 세심하게 고려해야 했기 때문에 색다른 개발 경험을 쌓을 수 있었습니다. 특히 유저의 상호작용에 따라 변화하는 상태와 애니메이션을 조화롭게 연결하며 몰입감을 높이는 데 주력했습니다. 이러한 과정에서 유저 경험을 중심으로 한 웹사이트 개발에 대한 깊은 이해를 더할 수 있었습니다."
     ],
   },
 ];
@@ -169,27 +179,27 @@ const projects = [
       "https://all-you-have-to-do-version2.vercel.app/",
   },
   {
-    name: "Twitter-clone-site",
-    description: "실시간 소식 공유, 팔로워 및 팔로잉 기능 구현",
+    name: "typing-magician",
+    description: "로그라이크 게임과 웹타이핑을 결합한 웹사이트입니다.",
     tags: [
       {
-        name: "swr",
-        color: "red-text-gradient",
-      },
-      {
-        name: "typescript",
+        name: "zustand",
         color: "blue-text-gradient",
       },
       {
-        name: "zustand",
+        name: "tailwindcss",
         color: "green-text-gradient",
       },
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
     ],
-    image: twitterclone,
-    source_code_git_link: "https://github.com/sorlros/clone-zwitter",
-    source_code_vercel_link: "https://clone-zwitter.vercel.app/",
+    image: typingMagician,
+    source_code_git_link: "https://github.com/sorlros/typing-magician",
+    source_code_vercel_link:
+      "https://typing-magician.vercel.app/",
   },
-  
   {
     name: "SavvyWallet",
     description: "가계부 웹사이트 SavvyWallet은 개인의 지출을 일일 별 월별 등으로 나누어 그래프와 선으로 시각화해서 유저에게 제공합니다.",
@@ -211,6 +221,27 @@ const projects = [
     source_code_git_link: "https://github.com/sorlros/savvy-wallet",
     source_code_vercel_link:
       "https://savvy-wallet-mm8n.vercel.app/",
+  },
+  {
+    name: "Twitter-clone-site",
+    description: "실시간 소식 공유, 팔로워 및 팔로잉 기능 구현",
+    tags: [
+      {
+        name: "swr",
+        color: "red-text-gradient",
+      },
+      {
+        name: "typescript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "zustand",
+        color: "green-text-gradient",
+      },
+    ],
+    image: twitterclone,
+    source_code_git_link: "https://github.com/sorlros/clone-zwitter",
+    source_code_vercel_link: "https://clone-zwitter.vercel.app/",
   },
   {
     name: "lol-info",

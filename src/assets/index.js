@@ -38,8 +38,9 @@ import airbnbclone from "./airbnbclone.png";
 import notionclone from "./notionclone.png";
 import trelloclone from "./trelloclone.png";
 import savvyWallet from "./savvy-wallet.png";
-import allYouHaveTodo from "./all-you-have-to-do.png"
-import lolInfo from "./lolInfo.png"
+import allYouHaveTodo from "./all-you-have-to-do.png";
+import lolInfo from "./lolInfo.png";
+import typingMagician from "./typing-magician.png";
 
 import netflixLogo from "./logo/netflix_logo.png";
 import notionLogo from "./logo/notion_logo.png";
@@ -47,8 +48,8 @@ import spotifyLogo from "./logo/spotify_logo.png";
 import trelloLogo from "./logo/trello_logo.png";
 import twitterLogo from "./logo/twitter_logo.png";
 import airbnbLogo from "./logo/airbnbLogo.png";
-import todoLogo from "./logo/todo.png"
-import savvyWalletLogo from "./logo/savvyWalletLogo.png"
+import todoLogo from "./logo/todo.png";
+import savvyWalletLogo from "./logo/savvyWalletLogo.png";
 
 
 export {
@@ -98,5 +99,6 @@ export {
   allYouHaveTodo,
   todoLogo,
   savvyWalletLogo,
-  lolInfo
+  lolInfo,
+  typingMagician
 };

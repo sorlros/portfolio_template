@@ -180,7 +180,7 @@ const projects = [
   },
   {
     name: "typing-magician",
-    description: "로그라이크 게임과 웹타이핑을 결합한 웹사이트입니다.",
+    description: "로그라이크 게임과 웹타이핑을 결합한 웹사이트입니다. 타이핑시 재생되는 경쾌한 첼로음들과 어울리는 배경음악들을 조합해보았습니다.",
     tags: [
       {
         name: "zustand",

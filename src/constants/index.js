@@ -21,7 +21,9 @@ import {
   twitterLogo,
   todoLogo,
   lolInfo,
-  typingMagician
+  typingMagician,
+  pickYourMaps,
+  pickYourMapsLogo
 } from "../assets";
 
 export const navLinks = [
@@ -45,7 +47,7 @@ const services = [
     icon: web,
   },
   {
-    title: "Full Stack Developer",
+    title: "Nodejs Developer",
     icon: nodejs,
   },
   {
@@ -136,6 +138,15 @@ const experiences = [
     ],
   },
   {
+    title: "pick-your-maps",
+    company_name: "sorlros",
+    icon: pickYourMapsLogo,
+    iconBg: "#383E56",
+    points: [
+      "구글 맵 api를 활용한 웹사이트로 프론트엔드는 next.js 백엔드는 node.js와 express로 제작되었습니다. 유저가 원하는 장소에 이미지와 간단한 메모, 평점등을 기록할수있으며 다양한 백엔드 api들로 기능들을 만들었습니다. 지도의 좌표 데이터로 위치를 기록하고 간단한 로그인 및 회원가입 기능이 포함되어 있습니다. DB는 mongoDB를 활용했으며 prisma를 통해 관리합니다."
+    ],
+  },
+  {
     title: "lol-info",
     company_name: "sorlros",
     icon: lolInfo,
@@ -156,6 +167,28 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "pick-your-maps",
+    description: "Node.js와 express를 활용해 만든 api와 구글 맵 api를 활용한 풀스택 웹사이트입니다. 백엔드 서버의 배포는 Render를 사용했으며 프론트 엔드는 vercel로 배포되었습니다.",
+    tags: [
+      {
+        name: "mongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Next.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: pickYourMaps,
+    source_code_git_link: "https://github.com/sorlros/pick-your-maps",
+    source_code_vercel_link:
+      "https://pick-your-maps.vercel.app/",
+  },
   {
     name: "All-You-Have-To-do",
     description: "firebase를 활용한 실시간 알림 기능 웹사이트입니다. 간단한 메모와 함께 알림을 설정 할수있습니다.",
@@ -180,7 +213,7 @@ const projects = [
   },
   {
     name: "typing-magician",
-    description: "로그라이크 게임과 웹타이핑을 결합한 웹사이트입니다. 타이핑시 재생되는 경쾌한 첼로음들과 어울리는 배경음악들을 조합해보았습니다.",
+    description: "로그라이크 게임과 웹타이핑을 결합한 웹사이트입니다. 경쾌한 배경 음악들과 함께 타이핑을 즐겨보세요.",
     tags: [
       {
         name: "zustand",

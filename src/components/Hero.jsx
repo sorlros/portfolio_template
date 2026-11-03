@@ -18,12 +18,12 @@ const Hero = () => {
 					<h1 className={`${styles.heroHeadText} text-white`}>
 						안녕하세요, 저는 <span className="text-[#915eff]">최규철</span> 입니다.
 					</h1>
-					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
+					<p className={`${styles.heroSubText} mt-2 text-white-100`} style={{ wordBreak: "keep-all" }}>
 						<span className="block text-[16px] sm:text-[18px] leading-[26px] sm:leading-[28px] text-secondary">
-							기획부터 배포·운영까지 직접 하고, 결함은 실측으로 확정합니다.
-							<br className="sm:block hidden" /> AI 에이전트와 분업하되 결정과 검증은 제가 합니다.
+							웹 서비스, AI, Android 앱, CLI 도구.
+							<br className="sm:block hidden" /> 주제는 매번 달랐고, 정의하고 나누고 해결하는 방식은 같았습니다.
 						</span>
-						<span className="block mt-3">사용자가 믿고 쓸 수 있는 서비스를 끝까지 책임지는 풀스택 개발자입니다.</span>
+						<span className="block mt-3">문제를 푸는 방법을 아는 풀스택 개발자입니다.</span>
 					</p>
 				</div>
 

@@ -6,6 +6,14 @@ import { techStack } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
+// 사용한 프로젝트 수로 3단계: 5개 이상 / 2~4개 / 1개
+const tierClass = (count) =>
+  count >= 5
+    ? "bg-[#915eff] text-white font-semibold"
+    : count >= 2
+    ? "bg-tertiary text-white-100 border border-[#915eff]"
+    : "text-secondary border border-[#2a2448]";
+
 const StackRow = ({ index, category, items }) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.15, 0.75)}
@@ -16,12 +24,17 @@ const StackRow = ({ index, category, items }) => (
       {items.map((item) => (
         <li
           key={item.name}
-          title={item.projects.join(", ")}
-          className="flex items-center gap-2 bg-tertiary rounded-full pl-4 pr-2 py-1.5 text-[14px] text-white-100"
+          tabIndex={0}
+          aria-label={`${item.name}: ${item.projects.join(", ")}`}
+          className={`group relative flex items-center gap-2 rounded-full pl-4 pr-2 py-1.5 text-[14px] cursor-default outline-none focus-visible:ring-2 focus-visible:ring-white ${tierClass(item.projects.length)}`}
         >
           {item.name}
-          <span className="min-w-[22px] h-[22px] px-1.5 rounded-full green-pink-gradient text-[12px] font-bold text-white flex items-center justify-center">
+          <span className="min-w-[22px] h-[22px] px-1.5 rounded-full bg-black-100/60 text-[12px] font-bold flex items-center justify-center">
             {item.projects.length}
+          </span>
+          {/* 마우스를 올리거나 탭(포커스)하면 사용한 프로젝트 목록 표시 */}
+          <span className="hidden group-hover:block group-focus:block absolute left-0 bottom-full mb-2 z-20 w-max max-w-[260px] rounded-lg bg-black-100 border border-[#915eff] px-3 py-2 text-[12px] font-normal text-white-100 leading-[20px] shadow-card">
+            {item.projects.join(" · ")}
           </span>
         </li>
       ))}
@@ -53,7 +66,18 @@ const About = () => {
       </motion.div>
 
       <div className="mt-14">
-        <p className="mb-4 text-secondary text-[13px]">숫자는 그 기술을 사용한 프로젝트 수입니다.</p>
+        <div className="mb-4 flex flex-wrap items-center gap-x-4 gap-y-2 text-secondary text-[13px]">
+          <span>숫자 = 그 기술을 사용한 프로젝트 수 · 마우스를 올리면 프로젝트 이름</span>
+          <span className="flex items-center gap-2">
+            <i className="w-3 h-3 rounded-full bg-[#915eff]" /> 5개 이상
+          </span>
+          <span className="flex items-center gap-2">
+            <i className="w-3 h-3 rounded-full bg-tertiary border border-[#915eff]" /> 2~4개
+          </span>
+          <span className="flex items-center gap-2">
+            <i className="w-3 h-3 rounded-full border border-[#2a2448]" /> 1개
+          </span>
+        </div>
         {techStack.map((group, index) => (
           <StackRow key={group.category} index={index} {...group} />
         ))}

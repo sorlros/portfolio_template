@@ -19,7 +19,11 @@ const Hero = () => {
 						안녕하세요, 저는 <span className="text-[#915eff]">최규철</span> 입니다.
 					</h1>
 					<p className={`${styles.heroSubText} mt-2 text-white-100`}>
-						<span className="text-[18px]">UI/UX 디자인, 반응형 웹 개발, 성능 최적화</span> <br className="sm:block hidden" /> 풀스택 웹개발자 최규철입니다.
+						<span className="block text-[16px] sm:text-[18px] leading-[26px] sm:leading-[28px] text-secondary">
+							기획부터 배포·운영까지 직접 하고, 결함은 실측으로 확정합니다.
+							<br className="sm:block hidden" /> AI 에이전트와 분업하되 결정과 검증은 제가 합니다.
+						</span>
+						<span className="block mt-3">사용자가 믿고 쓸 수 있는 서비스를 끝까지 책임지는 풀스택 개발자입니다.</span>
 					</p>
 				</div>
 

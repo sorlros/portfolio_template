@@ -141,12 +141,12 @@ const experiences = [
   },
   {
     title: "WALL-E",
-    company_name: "4인 팀 · 팀장 · 2026.02 (16일)",
+    company_name: "4인 팀 · 팀장 · AI 연동 Android 앱 · 2026.02 (16일)",
     icon: walleLogo,
     iconBg: "#383E56",
     points: [
-      "드론 영상으로 건물 외벽 균열을 실시간 탐지하는 팀 프로젝트에서 팀장을 맡아 시스템 아키텍처 설계, 영상 서버, AI 추론 백엔드를 담당했습니다.",
-      "드론의 RTMP 영상을 MediaMTX로 받아 FastAPI 서버가 수신·추론·방송 3개 트랙으로 비동기 처리하도록 설계하고, 720p 30fps MJPEG 영상과 WebSocket 탐지 메타데이터를 Flutter 앱에 나눠 보냈습니다.",
+      "드론 영상에서 건물 외벽 균열을 AI로 실시간 탐지해 보여 주는 Android 앱(Flutter) 팀 프로젝트에서 팀장을 맡아 시스템 아키텍처 설계, 영상 서버, AI 추론 백엔드를 담당했습니다.",
+      "드론의 RTMP 영상을 MediaMTX로 받아 FastAPI 서버가 수신·추론·방송 3개 트랙으로 비동기 처리하도록 설계하고, 720p 30fps MJPEG 영상과 WebSocket 탐지 메타데이터를 Android 앱에 나눠 보냈습니다. 앱에서는 실시간 영상 확인, 수동 촬영, 탐지 이력·지도 조회를 할 수 있습니다.",
       "YOLOv11n으로 균열을 탐지하고, 드론 흔들림으로 같은 균열이 여러 번 저장되지 않도록 MobileNetV3 임베딩의 코사인 유사도(임계값 80%)로 중복을 걸렀습니다. 창문 탐지 모델로 건물 내부를 흐림 처리해 거주자 사생활도 보호했습니다.",
       "HLS의 3~5초 지연과 화면·박스 좌표 어긋남은 서버에서 박스를 그려 넣은 MJPEG 전송으로 바꿔 해결했습니다.",
     ],
@@ -164,49 +164,63 @@ const experiences = [
     ],
   },
   {
-    title: "Twitter-clone",
-    company_name: "Twitter",
-    icon: twitterLogo,
-    iconBg: "#383E56",
-    points: [
-      "프론트 엔드 영역에서 React와 Next.js를 통해 라우팅과 서버 사이드랜더링을 구현하고 Tailwincss로 CSS를 구현한 풀스택 Twitter 클론 웹사이트입니다. 백엔드 영역에서의 데이터 관리를 위해 Prisma와 MongoDB를 사용했습니다. 유저 인증 기능과 이미지 업로드, 전체적인 알림 기능을 위해 next-auth를 사용했으며 이 사이트는 Full responsive를 염두해 만들어졌으며 Typescript를 통해 타입 관리를 했습니다. 유저가 트윗을 수신하거나 회신 받을수있으며 다른 유저를 follow하거나 트윗에 좋아요 버튼이 눌렸을때 이를 알림 받을수있는 기능을 구현했습니다.",
-    ],
-  },
-  
-  {
-    title: "SavvyWallet",
-    company_name: "sorlros",
-    icon: savvyWalletLogo,
-    iconBg: "#383E56",
-    points: [
-      "사용자의 월 별 지출 내역 및 카테고리별 지출을 시각적으로 표현하기 위해 차트를 chart.js와 react-calendar 라이브러리를 사용했으며 메모를 남길수 있는 기능을 포함했습니다. 해당 데이터들은 각 사용자별로 mongoDB와 prisma를 통해 저장되며 실시간으로 데이터들을 저장 및 불러올수있습니다.",
-    ],
-  },
-  {
-    title: "All-You-Have-To-Do",
-    company_name: "sorlros",
-    icon: todoLogo,
-    iconBg: "#383E56",
-    points: [
-      "이 웹사이트를 만들게 된 동기는 사용자에게 알림을 보낼수있는 웹사이트를 제작해보고싶어 정보를 찾던 중 Firebase를 통해 해당 기능을 구현할수있음을 찾게되고 해당 기능을 사용해보았습니다. token값을 통해 사용자의 기기정보를 등록하고 해당 기기로 알림을 보내는 과정들을 알게되었고 예약 알림 기능 구현을 위해 node-schedule 라이브러리를 통해 사용자가 지정한 시간에 알림이 전송되게끔 코드를 작성했습니다. 이 프로젝트를 통해 서비스워커에 대한 이해도와 Next.js의 Api routes 기능을 경험했습니다. 주로 겪은 오류들은 Todo 데이터들을 생성하는 과정에서 컴포넌트 생명주기와 관련된 렌더링 과정에서 오류를 겪어 해당 문제에 대해 인지하고 수정하는 과정들이 있었으며 Firebase의 기능을 처음 사용하다보니 적지 않은 문제들에 마주하게됬었습니다. Web Push Notification 기능에 대해 많은 자료를 접하고 직접 구현해볼수있어 개인적으로는 그동안의 프로젝트중 가장 기억에 남았습니다."
-    ],
-  },
-  {
     title: "pick-your-maps",
-    company_name: "sorlros",
+    company_name: "1인 개발 · 2025.03 ~ 2025.04",
     icon: pickYourMapsLogo,
     iconBg: "#383E56",
     points: [
-      "구글 맵 api를 활용한 웹사이트로 프론트엔드는 next.js 백엔드는 node.js와 express로 제작되었습니다. 유저가 원하는 장소에 이미지와 간단한 메모, 평점등을 기록할수있으며 다양한 백엔드 api들로 기능들을 만들었습니다. 지도의 좌표 데이터로 위치를 기록하고 간단한 로그인 및 회원가입 기능이 포함되어 있습니다. DB는 mongoDB를 활용했으며 prisma를 통해 관리합니다."
+      "Google Maps API로 원하는 장소에 이미지·메모·평점을 기록하는 지도 기록 웹사이트를 프론트엔드부터 백엔드까지 혼자 만들었습니다.",
+      "프론트엔드는 Next.js, 백엔드는 Node.js·Express로 나누고, 회원·메모 REST API와 multer 이미지 업로드를 직접 작성했습니다.",
+      "bcrypt와 JWT로 회원가입·로그인을 구현하고, 지도 좌표와 메모 데이터는 Prisma와 MongoDB로 관리했습니다.",
+      "백엔드는 Render, 프론트엔드는 Vercel로 나눠 배포하고, 두 도메인 사이의 CORS 설정을 맞췄습니다.",
     ],
   },
   {
     title: "typing-magician",
-    company_name: "sorlros",
+    company_name: "1인 개발 · 2024.08 ~ 2025.02",
     icon: typingMagician,
     iconBg: "#383E56",
     points: [
-      "타이핑과 게임을 결합한 웹사이트를 개발하면서  조건에 따라 상태값을 관리하는 기능 구현에 특히 중점을 두었습니다. 기존의 일반적인 웹사이트와는 달리 유저가 실시간으로 경험하는 요소들을 다양한 관점에서 세심하게 고려해야 했기 때문에 색다른 개발 경험을 쌓을 수 있었습니다. 특히 유저의 상호작용에 따라 변화하는 상태와 애니메이션을 조화롭게 연결하며 몰입감을 높이는 데 주력했습니다. 이러한 과정에서 유저 경험을 중심으로 한 웹사이트 개발에 대한 깊은 이해를 더할 수 있었습니다."
+      "마법사가 되어 몰려오는 몬스터를 타이핑으로 물리치는, 로그라이크 요소를 결합한 웹 타이핑 게임을 혼자 만들었습니다.",
+      "타이핑 정확도, 스테이지, 스킬 지속시간, 캐릭터·몬스터 체력처럼 조건에 따라 바뀌는 게임 상태를 Zustand 스토어 8개로 나눠 관리하고, 상태 변화와 Anime.js 애니메이션이 어긋나지 않도록 연결하는 데 집중했습니다.",
+      "많은 게임 이미지를 sharp로 텍스처 아틀라스로 묶는 생성 스크립트를 만들어 에셋 로딩을 줄였고, 배경 음악·효과음과 다국어(i18n) 설정을 넣었습니다.",
+      "일반 웹사이트와 달리 유저가 실시간으로 느끼는 반응을 여러 관점에서 살펴야 했고, 유저 경험을 중심에 두는 개발을 익힌 프로젝트입니다.",
+    ],
+  },
+  {
+    title: "All-You-Have-To-Do",
+    company_name: "1인 개발 · 2024.02 ~ 2024.07 (1차 구현 후 2차 재작성)",
+    icon: todoLogo,
+    iconBg: "#383E56",
+    points: [
+      "할 일과 일정을 카테고리별로 관리하고, 지정한 시각에 웹 푸시 알림을 보내는 할 일 관리 웹사이트를 혼자 만들었습니다.",
+      "Firebase Cloud Messaging으로 기기 토큰을 등록해 그 기기로 알림을 보내고, node-schedule로 사용자가 지정한 시각에 알림이 전송되게 했습니다. 이 과정에서 서비스워커와 Next.js API Routes를 처음 깊게 다뤘습니다.",
+      "Google 로그인과 익명 로그인(일주일 뒤 데이터 만료)을 지원하고, PWA로 기기에 설치해 앱처럼 쓸 수 있게 했습니다.",
+      "1차 구현에서는 할 일 데이터를 만들 때 컴포넌트 생명주기와 렌더링 순서 때문에 생긴 오류를 찾아 고쳤고, 이후 Next.js 14 App Router·Zustand·Prisma 구조로 2차 버전을 다시 만들었습니다.",
+    ],
+  },
+  {
+    title: "SavvyWallet",
+    company_name: "1인 개발 · 2023.12 ~ 2024.02",
+    icon: savvyWalletLogo,
+    iconBg: "#383E56",
+    points: [
+      "월별·일별 지출과 카테고리별 비중을 차트와 달력으로 보여 주는 가계부 웹사이트를 혼자 만들었습니다.",
+      "chart.js(react-chartjs-2)로 카테고리별 지출을, react-calendar로 날짜별 지출을 시각화하고, 날짜마다 메모를 남길 수 있게 했습니다.",
+      "Next.js App Router의 Server Actions로 지출·메모 생성·조회·수정·삭제를 구현하고, 데이터는 Prisma와 MongoDB에 사용자별로 저장했습니다.",
+      "next-auth와 bcrypt로 회원가입·로그인을 구현하고, react-hook-form과 zod 스키마로 폼 입력을 검증했습니다.",
+    ],
+  },
+  {
+    title: "Twitter-clone",
+    company_name: "1인 개발 · 2023.07 ~ 2023.09",
+    icon: twitterLogo,
+    iconBg: "#383E56",
+    points: [
+      "트윗 작성·답글, 팔로우, 좋아요와 그에 대한 알림까지 갖춘 풀스택 Twitter 클론을 혼자 만들었습니다.",
+      "Next.js(Pages Router)의 API Routes로 인증·게시글·댓글·팔로우·알림 API 12개를 직접 작성하고, 데이터는 Prisma와 MongoDB로 관리했습니다.",
+      "next-auth와 bcrypt로 회원가입·로그인을 구현하고, react-dropzone으로 프로필·게시글 이미지 업로드를 붙였습니다.",
+      "SWR로 서버 데이터를 캐싱·재검증하고, 로그인·편집 모달 상태는 Zustand로 분리했습니다. TypeScript와 Tailwind CSS로 반응형 화면을 구성했습니다.",
     ],
   },
 ];
@@ -256,7 +270,7 @@ const projects = [
   },
   {
     name: "WALL-E",
-    description: "드론 영상에서 건물 외벽 균열을 실시간으로 탐지하고, 같은 균열의 중복 저장을 임베딩 유사도로 막는 4인 팀 프로젝트입니다.",
+    description: "AI 추론 서버와 연동된 Android 앱으로, 드론 영상에서 건물 외벽 균열을 실시간으로 탐지하고 같은 균열의 중복 저장을 임베딩 유사도로 막는 4인 팀 프로젝트입니다.",
     tags: [
       {
         name: "YOLOv11",
@@ -267,7 +281,7 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "Flutter",
+        name: "Android",
         color: "pink-text-gradient",
       },
     ],

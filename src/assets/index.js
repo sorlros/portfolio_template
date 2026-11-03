@@ -33,7 +33,6 @@ import chatgpt from "./chatgpt.png";
 import netflixclone from "./netflixclone.png";
 import animate from "./animate.png";
 import spotifyclone from "./spotifyclone.png";
-import twitterclone from "./twitterclone.png";
 import airbnbclone from "./airbnbclone.png";
 import notionclone from "./notionclone.png";
 import trelloclone from "./trelloclone.png";
@@ -50,7 +49,6 @@ import netflixLogo from "./logo/netflix_logo.png";
 import notionLogo from "./logo/notion_logo.png";
 import spotifyLogo from "./logo/spotify_logo.png";
 import trelloLogo from "./logo/trello_logo.png";
-import twitterLogo from "./logo/twitter_logo.png";
 import airbnbLogo from "./logo/airbnbLogo.png";
 import todoLogo from "./logo/todo.png";
 import savvyWalletLogo from "./logo/savvyWalletLogo.png";
@@ -94,7 +92,6 @@ export {
   animate,
   vercel,
   spotifyclone,
-  twitterclone,
   airbnbclone,
   notionclone,
   trelloclone,
@@ -102,7 +99,6 @@ export {
   notionLogo,
   spotifyLogo,
   trelloLogo,
-  twitterLogo,
   airbnbLogo,
   savvyWallet,
   allYouHaveTodo,

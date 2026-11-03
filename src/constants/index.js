@@ -12,11 +12,9 @@ import {
   chatgpt,
   threejs,
   vercel,
-  twitterclone,
   allYouHaveTodo,
   savvyWallet,
   savvyWalletLogo,
-  twitterLogo,
   todoLogo,
   typingMagician,
   pickYourMaps,
@@ -50,12 +48,11 @@ const techStack = [
   {
     category: "Frontend",
     items: [
-      { name: "React", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "Orbit Agent Web"] },
-      { name: "Next.js", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician"] },
-      { name: "TypeScript", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "Orbit Agent Web", "detoks"] },
-      { name: "Tailwind CSS", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "Orbit Agent Web"] },
-      { name: "Zustand", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician"] },
-      { name: "SWR", projects: ["Twitter-clone"] },
+      { name: "React", projects: ["SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "Orbit Agent Web"] },
+      { name: "Next.js", projects: ["SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician"] },
+      { name: "TypeScript", projects: ["SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "Orbit Agent Web", "detoks"] },
+      { name: "Tailwind CSS", projects: ["SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "Orbit Agent Web"] },
+      { name: "Zustand", projects: ["SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician"] },
       { name: "Anime.js", projects: ["typing-magician"] },
     ],
   },
@@ -63,12 +60,12 @@ const techStack = [
     category: "Backend · DB",
     items: [
       { name: "Node.js · Express", projects: ["pick-your-maps"] },
-      { name: "Next.js API · Server Actions", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do"] },
+      { name: "Next.js API · Server Actions", projects: ["SavvyWallet", "All-You-Have-To-Do"] },
       { name: "FastAPI (Python)", projects: ["NovelAIne", "Orbit Agent Web", "WALL-E"] },
-      { name: "Prisma", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps"] },
-      { name: "MongoDB", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps"] },
+      { name: "Prisma", projects: ["SavvyWallet", "All-You-Have-To-Do", "pick-your-maps"] },
+      { name: "MongoDB", projects: ["SavvyWallet", "All-You-Have-To-Do", "pick-your-maps"] },
       { name: "Supabase (PostgreSQL)", projects: ["NovelAIne", "Orbit Agent Web", "WALL-E"] },
-      { name: "next-auth · JWT", projects: ["Twitter-clone", "SavvyWallet", "pick-your-maps"] },
+      { name: "next-auth · JWT", projects: ["SavvyWallet", "pick-your-maps"] },
       { name: "Firebase (FCM)", projects: ["All-You-Have-To-Do"] },
       { name: "WebSocket", projects: ["WALL-E"] },
     ],
@@ -99,7 +96,7 @@ const techStack = [
   {
     category: "Infra · Tools",
     items: [
-      { name: "Vercel", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "NovelAIne", "Orbit Agent Web"] },
+      { name: "Vercel", projects: ["SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "NovelAIne", "Orbit Agent Web"] },
       { name: "Render", projects: ["pick-your-maps"] },
       { name: "GitHub Actions", projects: ["detoks"] },
       { name: "MediaMTX (RTMP)", projects: ["WALL-E"] },
@@ -250,18 +247,6 @@ const experiences = [
       "chart.js(react-chartjs-2)로 카테고리별 지출을, react-calendar로 날짜별 지출을 시각화하고, 날짜마다 메모를 남길 수 있게 했습니다.",
       "Next.js App Router의 Server Actions로 지출·메모 생성·조회·수정·삭제를 구현하고, 데이터는 Prisma와 MongoDB에 사용자별로 저장했습니다.",
       "next-auth와 bcrypt로 회원가입·로그인을 구현하고, react-hook-form과 zod 스키마로 폼 입력을 검증했습니다.",
-    ],
-  },
-  {
-    title: "Twitter-clone",
-    company_name: "1인 개발 · 2023.07 ~ 2023.09",
-    icon: twitterLogo,
-    iconBg: "#383E56",
-    points: [
-      "트윗 작성·답글, 팔로우, 좋아요와 그에 대한 알림까지 갖춘 풀스택 Twitter 클론을 혼자 만들었습니다.",
-      "Next.js(Pages Router)의 API Routes로 인증·게시글·댓글·팔로우·알림 API 12개를 직접 작성하고, 데이터는 Prisma와 MongoDB로 관리했습니다.",
-      "next-auth와 bcrypt로 회원가입·로그인을 구현하고, react-dropzone으로 프로필·게시글 이미지 업로드를 붙였습니다.",
-      "SWR로 서버 데이터를 캐싱·재검증하고, 로그인·편집 모달 상태는 Zustand로 분리했습니다. TypeScript와 Tailwind CSS로 반응형 화면을 구성했습니다.",
     ],
   },
 ];
@@ -436,27 +421,6 @@ const projects = [
     source_code_git_link: "https://github.com/sorlros/savvy-wallet",
     source_code_vercel_link:
       "https://savvy-wallet-mm8n.vercel.app/",
-  },
-  {
-    name: "Twitter-clone-site",
-    description: "실시간 소식 공유, 팔로워 및 팔로잉 기능 구현",
-    tags: [
-      {
-        name: "swr",
-        color: "red-text-gradient",
-      },
-      {
-        name: "typescript",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "zustand",
-        color: "green-text-gradient",
-      },
-    ],
-    image: twitterclone,
-    source_code_git_link: "https://github.com/sorlros/clone-zwitter",
-    source_code_vercel_link: "https://clone-zwitter.vercel.app/",
   },
 ];
 

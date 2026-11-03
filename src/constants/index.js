@@ -20,10 +20,16 @@ import {
   savvyWalletLogo,
   twitterLogo,
   todoLogo,
-  lolInfo,
   typingMagician,
   pickYourMaps,
-  pickYourMapsLogo
+  pickYourMapsLogo,
+  novelaine,
+  multiAgentBotWeb,
+  wallE,
+  detoks,
+  novelaineLogo,
+  multiAgentLogo,
+  walleLogo
 } from "../assets";
 
 export const navLinks = [
@@ -110,6 +116,54 @@ const technologies = [
 
 const experiences = [
   {
+    title: "detoks",
+    company_name: "4인 팀 · CLI / System Engineer · 2026.04",
+    icon: detoks,
+    iconBg: "#383E56",
+    points: [
+      "Codex·Gemini 같은 LLM CLI 앞단에서 입력 정제, 작업 분해, 컨텍스트 압축, 출력 후처리를 거쳐 토큰 사용을 줄이는 래퍼 CLI를 4인 팀으로 만들었습니다.",
+      "CLI / System Engineer를 맡아 CLI 진입점과 실행 모드 제어, 외부 CLI 어댑터 경계와 실제 subprocess 실행 경로를 구현하고, 도움말·오류 안내 등 CLI 런타임 사용성을 다듬었습니다.",
+      "프로젝트 폴더 구조와 문서 체계, 의존성 관리 방식(TypeScript는 npm, Python은 uv로 루트 한 곳에서 관리), GitHub Actions CI와 PR 템플릿을 구성했습니다.",
+      "어댑터 실행 경로를 계약으로 정의하고 실제 실행 요청을 검증하는 테스트와 Gemini 실제 실행 스모크 테스트를 추가했습니다.",
+    ],
+  },
+  {
+    title: "Orbit Agent Web (multi-agent-bot-web)",
+    company_name: "1인 개발 · 2026.03",
+    icon: multiAgentLogo,
+    iconBg: "#383E56",
+    points: [
+      "자연어로 작업을 지시하면 Manager, BackendDev, FrontendDev, Designer, QAEngineer 에이전트가 분업하고 Reporter가 결과를 한국어 보고서로 정리하는 멀티 에이전트 시스템을 웹 클라이언트부터 오케스트레이터까지 혼자 만들었습니다.",
+      "프론트엔드는 React·Vite·TailwindCSS, 백엔드는 FastAPI와 LangGraph StateGraph로 구성해 Supervisor가 다음 에이전트를 고르도록 했습니다.",
+      "Supabase pgvector로 과거 유사 대화를 찾아 맥락으로 넣고, 메시지가 10개를 넘으면 백그라운드 작업으로 세션을 요약해 컨텍스트를 줄였습니다.",
+      "graph.astream과 Supabase Realtime으로 에이전트 진행 단계를 실시간으로 보여 주고, 긴 대화의 JSON 파싱 오류와 백엔드 오류 시 무한 로딩을 막는 방어 로직을 넣었습니다.",
+    ],
+  },
+  {
+    title: "WALL-E",
+    company_name: "4인 팀 · 팀장 · 2026.02 (16일)",
+    icon: walleLogo,
+    iconBg: "#383E56",
+    points: [
+      "드론 영상으로 건물 외벽 균열을 실시간 탐지하는 팀 프로젝트에서 팀장을 맡아 시스템 아키텍처 설계, 영상 서버, AI 추론 백엔드를 담당했습니다.",
+      "드론의 RTMP 영상을 MediaMTX로 받아 FastAPI 서버가 수신·추론·방송 3개 트랙으로 비동기 처리하도록 설계하고, 720p 30fps MJPEG 영상과 WebSocket 탐지 메타데이터를 Flutter 앱에 나눠 보냈습니다.",
+      "YOLOv11n으로 균열을 탐지하고, 드론 흔들림으로 같은 균열이 여러 번 저장되지 않도록 MobileNetV3 임베딩의 코사인 유사도(임계값 80%)로 중복을 걸렀습니다. 창문 탐지 모델로 건물 내부를 흐림 처리해 거주자 사생활도 보호했습니다.",
+      "HLS의 3~5초 지연과 화면·박스 좌표 어긋남은 서버에서 박스를 그려 넣은 MJPEG 전송으로 바꿔 해결했습니다.",
+    ],
+  },
+  {
+    title: "NovelAIne",
+    company_name: "1인 개발 · 2026.01 ~ 2026.06",
+    icon: novelaineLogo,
+    iconBg: "#383E56",
+    points: [
+      "AI와 함께 소설을 이어 쓰고 결정적인 장면에 삽화를 붙여 주는 인터랙티브 스토리텔링 서비스를 기획부터 배포까지 혼자 만들었습니다. 프론트엔드는 Flutter(웹·모바일)와 Riverpod, 백엔드는 FastAPI와 Supabase(PostgreSQL·pgvector)로 구성했습니다.",
+      "긴 서사에서 설정이 어긋나지 않도록 세계관과 과거 사건을 pgvector로 검색해 지금 필요한 정보만 프롬프트에 넣는 RAG 기억 구조를 만들고, 최근 대화는 원문으로 오래된 대화는 요약으로 유지하는 Summary Buffer로 토큰 낭비를 줄였습니다.",
+      "장면의 감정·중요도 점수가 기준을 넘을 때만 Stable Diffusion을 호출해 삽화를 만들고, LLM 응답은 HTTP 스트리밍으로 받아 만년필 필기 효과로 보여 줍니다.",
+      "Drift(WASM) 로컬 캐시와 Isolate 사전 파싱으로 스토리 화면 진입 시 서버 응답을 기다리지 않도록 했습니다.",
+    ],
+  },
+  {
     title: "Twitter-clone",
     company_name: "Twitter",
     icon: twitterLogo,
@@ -147,15 +201,6 @@ const experiences = [
     ],
   },
   {
-    title: "lol-info",
-    company_name: "sorlros",
-    icon: lolInfo,
-    iconBg: "#383E56",
-    points: [
-      "lol-info 웹사이트는 리그오브레전드 유저들의 이전 게임 정보들을 나타내는 op.gg와 같은 사이트들의 기능을 만들고 open api를 통해 얻은 데이터들을 용도에 맞게 코드로 분류하고 사용해보기 위해 만들어진 웹사이트입니다. 해당 사이트를 만들게 된 계기는 restful api을 활용한 웹사이트를 만들어보고싶었고 고민 하던 중 적절한 데이터들이 이미 충분한 lol을 활용했습니다. 해당 웹사이트에는 타입스크립트, 리액트 리덕스가 사용되었으며 UI를 위해 tailwindcss와 shadcn-ui가 사용되었습니다. 유저의 인게임 닉네임과 태그넘버를 통해 특정 유저의 이전 플레이했던 게임들의 정보를 불러올수있으며 개인 환경에서의 제한된 성능으로 인해 최근 20게임동안 사용한 챔피언 목록만 나타나게끔 만들어졌습니다."
-    ],
-  },
-  {
     title: "typing-magician",
     company_name: "sorlros",
     icon: typingMagician,
@@ -167,6 +212,88 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "NovelAIne",
+    description: "AI와 함께 소설을 이어 쓰는 인터랙티브 스토리텔링 서비스입니다. RAG 기억으로 긴 서사의 설정을 유지하고, 중요한 장면에만 삽화를 자동 생성합니다.",
+    tags: [
+      {
+        name: "Flutter",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "FastAPI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "pgvector",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: novelaine,
+    source_code_git_link: "https://github.com/sorlros/NovelAIne",
+    source_code_vercel_link: "https://novelaine.vercel.app/",
+  },
+  {
+    name: "Orbit Agent Web",
+    description: "자연어로 지시하면 역할별 AI 에이전트가 분업해 작업하고 결과를 보고서로 정리하는 LangGraph 멀티 에이전트 웹 시스템입니다.",
+    tags: [
+      {
+        name: "LangGraph",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "React",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Supabase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: multiAgentBotWeb,
+    source_code_git_link: "https://github.com/sorlros/multi-agent-bot-web",
+    source_code_vercel_link: "https://multi-agent-bot-web.vercel.app/",
+  },
+  {
+    name: "WALL-E",
+    description: "드론 영상에서 건물 외벽 균열을 실시간으로 탐지하고, 같은 균열의 중복 저장을 임베딩 유사도로 막는 4인 팀 프로젝트입니다.",
+    tags: [
+      {
+        name: "YOLOv11",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "FastAPI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Flutter",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: wallE,
+    source_code_git_link: "https://github.com/sorlros/WALL-E",
+  },
+  {
+    name: "detoks",
+    description: "LLM CLI 앞단에서 입력·출력·세션을 정리해 토큰 사용을 줄이는 래퍼 CLI입니다. 4인 팀에서 CLI와 시스템 계층을 맡았습니다.",
+    tags: [
+      {
+        name: "TypeScript",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Python",
+        color: "green-text-gradient",
+      },
+      {
+        name: "CLI",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: detoks,
+    source_code_git_link: "https://github.com/sorlros/detoks",
+  },
   {
     name: "pick-your-maps",
     description: "Node.js와 express를 활용해 만든 api와 구글 맵 api를 활용한 풀스택 웹사이트입니다. 백엔드 서버의 배포는 Render를 사용했으며 프론트 엔드는 vercel로 배포되었습니다.",
@@ -275,28 +402,6 @@ const projects = [
     image: twitterclone,
     source_code_git_link: "https://github.com/sorlros/clone-zwitter",
     source_code_vercel_link: "https://clone-zwitter.vercel.app/",
-  },
-  {
-    name: "lol-info",
-    description: "리그오브레전드 유저의 정보를 게임 정보를 데이터화한 사이트입니다.",
-    tags: [
-      {
-        name: "react-redux",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Next.js",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: lolInfo,
-    source_code_git_link: "https://github.com/sorlros/lol-info",
-    source_code_vercel_link:
-      "https://lol-info-teal.vercel.app/",
   },
 ];
 

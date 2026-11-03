@@ -39,7 +39,10 @@ import notionclone from "./notionclone.png";
 import trelloclone from "./trelloclone.png";
 import savvyWallet from "./savvy-wallet.png";
 import allYouHaveTodo from "./all-you-have-to-do.png";
-import lolInfo from "./lolInfo.png";
+import novelaine from "./novelaine.png";
+import multiAgentBotWeb from "./multi-agent-bot-web.png";
+import wallE from "./wall-e.jpg";
+import detoks from "./detoks.jpg";
 import typingMagician from "./typing-magician.png";
 import pickYourMaps from "./pick-your-maps.png";
 
@@ -52,6 +55,9 @@ import airbnbLogo from "./logo/airbnbLogo.png";
 import todoLogo from "./logo/todo.png";
 import savvyWalletLogo from "./logo/savvyWalletLogo.png";
 import pickYourMapsLogo from "./logo/mapsLogo.png";
+import novelaineLogo from "./logo/novelaineLogo.png";
+import multiAgentLogo from "./logo/multiAgentLogo.png";
+import walleLogo from "./logo/walleLogo.png";
 
 
 
@@ -102,8 +108,14 @@ export {
   allYouHaveTodo,
   todoLogo,
   savvyWalletLogo,
-  lolInfo,
   typingMagician,
   pickYourMaps,
-  pickYourMapsLogo
+  pickYourMapsLogo,
+  novelaine,
+  multiAgentBotWeb,
+  wallE,
+  detoks,
+  novelaineLogo,
+  multiAgentLogo,
+  walleLogo
 };

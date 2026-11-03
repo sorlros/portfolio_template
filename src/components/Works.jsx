@@ -42,14 +42,16 @@ const ProjectCard = ({
 								onClick={() => window.open(source_code_git_link, "_blank")}
 							/>
 						</div>
-						<div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
-							<img
-								src={vercel}
-								alt="vercel"
-								className="w-1/2 h-1/2 object-contain"
-								onClick={() => window.open(source_code_vercel_link, "_blank")}
-							/>
-						</div>
+						{source_code_vercel_link && (
+							<div className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer">
+								<img
+									src={vercel}
+									alt="vercel"
+									className="w-1/2 h-1/2 object-contain"
+									onClick={() => window.open(source_code_vercel_link, "_blank")}
+								/>
+							</div>
+						)}
 					</div>
 				</div>
 

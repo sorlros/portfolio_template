@@ -1,7 +1,5 @@
 import {
-  mobile,
   nextjs,
-  web,
   javascript,
   typescript,
   html,
@@ -47,22 +45,65 @@ export const navLinks = [
   },
 ];
 
-const services = [
+// 프로젝트별 사용 기술 (각 리포의 소스·의존성 기준)
+const techStack = [
   {
-    title: "Web Developer",
-    icon: web,
+    category: "Frontend",
+    items: [
+      { name: "React", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "Orbit Agent Web"] },
+      { name: "Next.js", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician"] },
+      { name: "TypeScript", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "Orbit Agent Web", "detoks"] },
+      { name: "Tailwind CSS", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "Orbit Agent Web"] },
+      { name: "Zustand", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician"] },
+      { name: "SWR", projects: ["Twitter-clone"] },
+      { name: "Anime.js", projects: ["typing-magician"] },
+    ],
   },
   {
-    title: "Nodejs Developer",
-    icon: nodejs,
+    category: "Backend · DB",
+    items: [
+      { name: "Node.js · Express", projects: ["pick-your-maps"] },
+      { name: "Next.js API · Server Actions", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do"] },
+      { name: "FastAPI (Python)", projects: ["NovelAIne", "Orbit Agent Web", "WALL-E"] },
+      { name: "Prisma", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps"] },
+      { name: "MongoDB", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps"] },
+      { name: "Supabase (PostgreSQL)", projects: ["NovelAIne", "Orbit Agent Web", "WALL-E"] },
+      { name: "next-auth · JWT", projects: ["Twitter-clone", "SavvyWallet", "pick-your-maps"] },
+      { name: "Firebase (FCM)", projects: ["All-You-Have-To-Do"] },
+      { name: "WebSocket", projects: ["WALL-E"] },
+    ],
   },
   {
-    title: "Nextjs Developer",
-    icon: nextjs,
+    category: "AI · ML",
+    items: [
+      { name: "RAG · pgvector", projects: ["NovelAIne", "Orbit Agent Web"] },
+      { name: "LLM API (OpenRouter 등)", projects: ["NovelAIne", "Orbit Agent Web"] },
+      { name: "LangGraph", projects: ["Orbit Agent Web"] },
+      { name: "Stable Diffusion", projects: ["NovelAIne"] },
+      { name: "YOLOv11", projects: ["WALL-E"] },
+      { name: "PyTorch (MobileNetV3)", projects: ["WALL-E"] },
+      { name: "OpenCV", projects: ["WALL-E"] },
+      { name: "llama.cpp", projects: ["detoks"] },
+    ],
   },
   {
-    title: "React Developer",
-    icon: reactjs,
+    category: "App · CLI",
+    items: [
+      { name: "Flutter", projects: ["NovelAIne", "WALL-E"] },
+      { name: "Android", projects: ["WALL-E"] },
+      { name: "Riverpod", projects: ["NovelAIne"] },
+      { name: "PWA", projects: ["All-You-Have-To-Do"] },
+      { name: "Node.js CLI", projects: ["detoks"] },
+    ],
+  },
+  {
+    category: "Infra · Tools",
+    items: [
+      { name: "Vercel", projects: ["Twitter-clone", "SavvyWallet", "All-You-Have-To-Do", "pick-your-maps", "typing-magician", "NovelAIne", "Orbit Agent Web"] },
+      { name: "Render", projects: ["pick-your-maps"] },
+      { name: "GitHub Actions", projects: ["detoks"] },
+      { name: "MediaMTX (RTMP)", projects: ["WALL-E"] },
+    ],
   },
 ];
 
@@ -419,4 +460,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, projects };
+export { techStack, technologies, experiences, projects };
